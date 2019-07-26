@@ -1,5 +1,4 @@
 module.exports = function(grunt) {
-
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
@@ -115,3 +114,4 @@ module.exports = function(grunt) {
   grunt.registerTask('integration', ['env:test', 'jasmine_node:integration']);
   grunt.registerTask('test', ['jshint', 'unit', 'integration']);
 };
+
